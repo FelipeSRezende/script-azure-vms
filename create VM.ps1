@@ -15,7 +15,7 @@ az group create --name myResourceGroupVM --location eastus
 az vm image list --output table
 
 
-#Listar imagens de S.O.s específicos teste
+#Listar imagens de S.O.s específicos
 
 az vm image list --offer <#Nome do S.O.#> --all --output table
 
