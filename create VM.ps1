@@ -1,8 +1,8 @@
 ﻿#Logar na subscrição
-az login -u -p # inserir usuário e senha para pular browser
+az login  # inserir usuário e senha para pular browser
 
 
-#Listar resourve groups disponíveis
+#Listar resource groups disponíveis
 az group list
 
 #cRiar um resource group
@@ -16,7 +16,6 @@ az vm image list --output table
 az vm image list --offer <#Nome do S.O.#> --all --output table
 
 #Criar VM via CLI
-az vm create \ --resource-group rg-lab-testes\--name vm-lab-teste01 \ --image
-
+az vm create -g $rg  -n $vmnewname  -l $location
 
 
